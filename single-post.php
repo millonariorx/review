@@ -37,13 +37,13 @@
   ======================================================== -->
 </head>
 
-<body>
+<body onLoad="loadDataPost(),loadComments()">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Review Colombia</h1>
@@ -51,11 +51,11 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.php">Inicio</a></li>
           <li><a href="single-post.html">Publicaciones</a></li>
-          <li class="dropdown"><a href="category.html"><span>Categorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li class="dropdown"><a href="category.php"><span>Categorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="search-result.html">Busqueda</a></li>
+              <li><a href="search-result.php">Busqueda</a></li>
               <li><a href="#">opcion 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
@@ -72,8 +72,8 @@
             </ul>
           </li>
 
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="contact.php">Contacto</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -87,7 +87,7 @@
 
         <!-- ======= Search Form ======= -->
         <div class="search-form-wrap js-search-form-wrap">
-          <form action="search-result.html" class="search-form">
+          <form action="search-result.php" class="search-form">
             <span class="icon bi-search"></span>
             <input type="text" placeholder="Search" class="form-control">
             <button class="btn js-search-close"><span class="bi-x"></span></button>
@@ -110,101 +110,17 @@
             <!-- ======= Single Post Content ======= -->
             <div class="single-post">
               <div class="post-meta"><span class="date">Viajes</span> <span class="mx-1">&bullet;</span> <span>Agosto 5 '22</span></div>
-              <h1 class="mb-5">13 Increibles lugares que debes visitar si viajas a la Guajira-Colombia</h1>
-              <p><span class="firstcharacter">S</span>i estás buscando qué hacer en La Guajira colombiana, no te puedes perder los planes que te recomendamos en este post. Se trata de recorridos ideales para toda la familia, en los que podrán conocer los atractivos de este departamento, su cultura y sobre todo disfrutar del contacto con sus maravillas naturales.</p>
-
-              <figure class="my-4">
-                <img src="assets/img/post-landscape-1.jpg" width="920" alt="" class="img-fluid">
-                <figcaption>¿Qué hacer en La Guajira, Colombia? </figcaption>
-              </figure>
-              <p>El departamento de La Guajira es el hogar de la comunidad indígena más grande de Colombia: los wayuu, pero también posee una naturaleza impresionante, ideal para que planees tus próximas vacaciones si quieres vivir una experiencia inolvidable.</p>
-              <p>Desiertos, playas y paisajes dignos de las mejores postales son solo algunos de sus principales atractivos; nuestra intención es ofrecerte alternativas para que escojas cómo deseas disfrutar de la oferta eco-turística de esta región según el tiempo y presupuesto que tengas disponible. Echa un vistazo a estas recomendaciones.</p>
-              <p></p>
-              <p></p>
-              <p></p>
-              <figure class="my-4">
-                <img src="assets/img/post-landscape-5.jpg" width="900" alt="" class="img-fluid">
-                <figcaption>Disfruta sus playas                </figcaption>
-              </figure>
-              <p>En esta ciudad puedes recrearte al visitar el paseo marítimo y el Parque Plaza Padilla, disfrutar la vida nocturna que tiene lugar en el muelle principal y participar en una auténtica parranda vallenata colombiana.</p>
-              <p>Las playas de Mayapo son ideales para practicar deportes acuáticos como el kitesurfing, windsurfing y más. Puedes alquilar el equipo por horas y sumergirte en sus deliciosas aguas azules.</p>
-              <p></p>
-              <p></p>
+              <h1 class="mb-5" id="titulo">13 Increibles lugares que debes visitar si viajas a la Guajira-Colombia</h1>
+              <div id="contentPost"></div>
+              
             </div><!-- End Single Post Content -->
 
             <!-- ======= Comments ======= -->
-            <div class="comments">
-              <h5 class="comment-title py-4">2 Comentarios</h5>
-              <div class="comment d-flex mb-4">
-                <div class="flex-shrink-0">
-                  <div class="avatar avatar-sm rounded-circle">
-                    <img class="avatar-img" src="assets/img/person-5.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-                <div class="flex-grow-1 ms-2 ms-sm-3">
-                  <div class="comment-meta d-flex align-items-baseline">
-                    <h6 class="me-2">Rances Romero</h6>
-                    <span class="text-muted">2d</span>
-                  </div>
-                  <div class="comment-body">
-                    Un lugar maravilloso
-                  </div>
+            <div class="comments" id="comentarios">
+            
 
-                  <div class="comment-replies bg-light p-3 mt-3 rounded">
-                    <h6 class="comment-replies-title mb-4 text-muted text-uppercase">2 respuestas</h6>
-
-                    <div class="reply d-flex mb-4">
-                      <div class="flex-shrink-0">
-                        <div class="avatar avatar-sm rounded-circle">
-                          <img class="avatar-img" src="assets/img/person-4.jpg" alt="" class="img-fluid">
-                        </div>
-                      </div>
-                      <div class="flex-grow-1 ms-2 ms-sm-3">
-                        <div class="reply-meta d-flex align-items-baseline">
-                          <h6 class="mb-0 me-2">Adrian Rances</h6>
-                          <span class="text-muted">2d</span>
-                        </div>
-                        <div class="reply-body">
-                          Paraiso colombiano
-                        </div>
-                      </div>
-                    </div>
-                    <div class="reply d-flex">
-                      <div class="flex-shrink-0">
-                        <div class="avatar avatar-sm rounded-circle">
-                          <img class="avatar-img" src="assets/img/person-3.jpg" alt="" class="img-fluid">
-                        </div>
-                      </div>
-                      <div class="flex-grow-1 ms-2 ms-sm-3">
-                        <div class="reply-meta d-flex align-items-baseline">
-                          <h6 class="mb-0 me-2">Adrian Rodriguez</h6>
-                          <span class="text-muted">1d</span>
-                        </div>
-                        <div class="reply-body">
-                          Recomendadisimo.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="comment d-flex">
-                <div class="flex-shrink-0">
-                  <div class="avatar avatar-sm rounded-circle">
-                    <img class="avatar-img" src="assets/img/person-2.jpg" alt="" class="img-fluid">
-                  </div>
-                </div>
-                <div class="flex-shrink-1 ms-2 ms-sm-3">
-                  <div class="comment-meta d-flex">
-                    <h6 class="me-2">Rodri Torres</h6>
-                    <span class="text-muted">4d</span>
-                  </div>
-                  <div class="comment-body">
-                    Cuando visitas La Guajira, el motivo principal - por lo general - es llegar a este punto, Al Cabo de la Vela, y la verdad, el lugar no decepciona.
-                  </div>
-                </div>
-              </div>
-            </div><!-- End Comments -->
+            </div>
+              <!-- End Comments -->
 
             <!-- ======= Comments Form ======= -->
             <div class="row justify-content-center mt-5">
@@ -349,24 +265,24 @@
             <div class="aside-block">
               <h3 class="aside-title">Categorias</h3>
               <ul class="aside-links list-unstyled">
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Servicios</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Cultura</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Experiencias</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Comida</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Emprendimientos</a></li>
-                <li><a href="category.html"><i class="bi bi-chevron-right"></i> Viajes</a></li>
+                <li><a href="category.php"><i class="bi bi-chevron-right"></i> Servicios</a></li>
+                <li><a href="category.php"><i class="bi bi-chevron-right"></i> Cultura</a></li>
+                <li><a href="category.php"><i class="bi bi-chevron-right"></i> Experiencias</a></li>
+                <li><a href="category.php"><i class="bi bi-chevron-right"></i> Comida</a></li>
+                <li><a href="category.php"><i class="bi bi-chevron-right"></i> Emprendimientos</a></li>
+                <li><a href="category.php"><i class="bi bi-chevron-right"></i> Viajes</a></li>
               </ul>
             </div><!-- End Categories -->
 
             <div class="aside-block">
               <h3 class="aside-title">Etiquetas</h3>
               <ul class="aside-tags list-unstyled">
-                <li><a href="category.html">Servicios</a></li>
-                <li><a href="category.html">Cultura</a></li>
-                <li><a href="category.html">Experiencias</a></li>
-                <li><a href="category.html">Comida</a></li>
-                <li><a href="category.html">Emprendimientos</a></li>
-                <li><a href="category.html">Viajes</a></li>
+                <li><a href="category.php">Servicios</a></li>
+                <li><a href="category.php">Cultura</a></li>
+                <li><a href="category.php">Experiencias</a></li>
+                <li><a href="category.php">Comida</a></li>
+                <li><a href="category.php">Emprendimientos</a></li>
+                <li><a href="category.php">Viajes</a></li>
               </ul>
             </div><!-- End Tags -->
 
@@ -386,28 +302,28 @@
           <div class="col-lg-4">
             <h3 class="footer-heading">About Colombia Review</h3>
             <p>Colombia Review nace para cubrir la necesidad que representa elegir tu proximo destino de viaje y que lugares debes visitar.</p>
-            <p><a href="about.html" class="footer-link-more">Leer mas</a></p>
+            <p><a href="about.php" class="footer-link-more">Leer mas</a></p>
           </div>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Navegar</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inicio</a></li>
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Reseñas</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Categories</a></li>
+              <li><a href="index.php"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+              <li><a href="index.php"><i class="bi bi-chevron-right"></i> Reseñas</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Categories</a></li>
               <li><a href="single-post.html"><i class="bi bi-chevron-right"></i> Publicaciones</a></li>
-              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
-              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contacto</a></li>
+              <li><a href="about.php"><i class="bi bi-chevron-right"></i> About Us</a></li>
+              <li><a href="contact.php"><i class="bi bi-chevron-right"></i> Contacto</a></li>
             </ul>
           </div>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Categorias</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Servicios</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Cultura</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Experiencias</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Comida</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Emprendimientos</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Viajes</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Servicios</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Cultura</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Experiencias</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Comida</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Emprendimientos</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Viajes</a></li>
             </ul>
           </div>
 
@@ -476,6 +392,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/ajaxFunctions.js"></script>
 
 </body>
 

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Colombia Review - About</title>
+  <title>Colombia Review - Contactanos</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,8 +28,6 @@
   <!-- Template Main CSS Files -->
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -38,7 +36,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <h1>Colombia Review</h1>
@@ -46,11 +44,11 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="single-post.html">Publicaciones</a></li>
-          <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="index.php">Inicio</a></li>
+          <li><a href="single-post.php">Publicaciones</a></li>
+          <li class="dropdown"><a href="category.php"><span>Categorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="search-result.html">Busqueda</a></li>
+              <li><a href="search-result.php">Search Result</a></li>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
@@ -67,8 +65,8 @@
             </ul>
           </li>
 
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contacto</a></li>
+          <li><a href="about.php">About Us</a></li>
+          <li><a href="contact.html">Contactanos</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -82,7 +80,7 @@
 
         <!-- ======= Search Form ======= -->
         <div class="search-form-wrap js-search-form-wrap">
-          <form action="search-result.html" class="search-form">
+          <form action="search-result.php" class="search-form">
             <span class="icon bi-search"></span>
             <input type="text" placeholder="Search" class="form-control">
             <button class="btn js-search-close"><span class="bi-x"></span></button>
@@ -96,95 +94,68 @@
   </header><!-- End Header -->
 
   <main id="main">
-    <section>
+    <section id="contact" class="contact mb-5">
       <div class="container" data-aos="fade-up">
+
         <div class="row">
           <div class="col-lg-12 text-center mb-5">
-            <h1 class="page-title">About us</h1>
+            <h1 class="page-title">Contactanos</h1>
           </div>
         </div>
 
-        <div class="row mb-5">
+        <div class="row gy-4">
 
-          <div class="d-md-flex post-entry-2 half">
-            <a href="#" class="me-4 thumbnail">
-              <img src="assets/img/post-landscape-2.jpg" alt="" class="img-fluid">
-            </a>
-            <div class="ps-md-5 mt-4 mt-md-0">
-              <div class="post-meta mt-4">Sobre nosotros</div>
-              <h2 class="mb-4 display-4">Historia</h2>
-
-              <p>Colombia Review nace para cubrir la necesidad que representa elegir tu proximo destino de viaje y que lugares debes visitar.</p>
-              <p>El turismo es uno de los sectores que más se ha favorecido con el uso de internet. En la colombia review el cliente podra descubrir por sus propios medios los establecimientos o lugares que más se asemejan a lo que imaginó que iban a ser sus vacaciones. </p>
+          <div class="col-md-4">
+            <div class="info-item">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Direccion</h3>
+              <address>...</address>
             </div>
-          </div>
+          </div><!-- End Info Item -->
 
-          <div class="d-md-flex post-entry-2 half mt-5">
-            <a href="#" class="me-4 thumbnail order-2">
-              <img src="assets/img/post-landscape-1.jpg" alt="" class="img-fluid">
-            </a>
-            <div class="pe-md-5 mt-4 mt-md-0">
-              <div class="post-meta mt-4">Mision &amp; Vision</div>
-              <h2 class="mb-4 display-4">Mision &amp; Vision</h2>
-
-              <p>Colombia Review es el sitio donde podras encontrar de manera agil y segura las mejores actividades turisticas de Colombia en cada region.</p>
-              <p>Ser la primera e independiente fuente de información del viajero para encontrar el hotel ideal al precio más bajo</p>
+          <div class="col-md-4">
+            <div class="info-item info-item-borders">
+              <i class="bi bi-phone"></i>
+              <h3>Numero Telefonico</h3>
+              <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
             </div>
-          </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-md-4">
+            <div class="info-item">
+              <i class="bi bi-envelope"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@example.com">Colombiareview@gmail.com</a></p>
+            </div>
+          </div><!-- End Info Item -->
 
         </div>
 
-      </div>
-    </section>
-
-    <section class="mb-5 bg-light py-5">
-      <div class="container" data-aos="fade-up">
-        <div class="row justify-content-between align-items-lg-center">
-          <div class="col-lg-5 mb-4 mb-lg-0">
-            <h2 class="display-4 mb-4">Ultimas Noticias</h2>
-            <p>Martes 19 de septiembre entrega numero 4</p>
-            <p></p>
-            <p><a href="#" class="more">Ver todas las publicaciones</a></p>
-          </div>
-          <div class="col-lg-6">
+        <div class="form mt-5">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
-              <div class="col-6">
-                <img src="assets/img/post-portrait-3.jpg" alt="" class="img-fluid mb-4">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
               </div>
-              <div class="col-6 mt-4">
-                <img src="assets/img/post-portrait-4.jpg" alt="" class="img-fluid mb-4">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <div class="row justify-content-center">
-              <div class="col-lg-6">
-                <h2 class="display-4">Nuestro equipo</h2>
-                <p>Nuestro equipo está compuesto por expertos globales, profesionales apasionados cuya motivación y dedicación a su trabajo es vital para el éxito de Colombia Review</p>
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="TU Email" required>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 text-center mb-5">
-            <img src="assets/img/person-1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-4">
-            <h4>Rances Rodriguez</h4>
-            <span class="d-block mb-3 text-uppercase">Founder &amp; CEO</span>
-            <p>Estudian de ingenieria de sistemas UIS</p>
-          </div>
-          <div class="col-lg-4 text-center mb-5">
-            <img src="assets/img/person-2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-4">
-            <h4>Adrian Romero</h4>
-            <span class="d-block mb-3 text-uppercase">Founder, VP</span>
-            <p>Estudian de ingenieria de sistemas UIS</p>
-          </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="asunto" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Cargando</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
+            </div>
+            <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+          </form>
+        </div><!-- End Contact Form -->
 
-        </div>
       </div>
     </section>
 
@@ -200,28 +171,28 @@
           <div class="col-lg-4">
             <h3 class="footer-heading">About Colombia Review</h3>
             <p>Colombia Review nace para cubrir la necesidad que representa elegir tu proximo destino de viaje y que lugares debes visitar.</p>
-            <p><a href="about.html" class="footer-link-more">Leer mas</a></p>
+            <p><a href="about.php" class="footer-link-more">Leer mas</a></p>
           </div>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Navegar</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inicio</a></li>
-              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Reseñas</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Categories</a></li>
-              <li><a href="single-post.html"><i class="bi bi-chevron-right"></i> Publicaciones</a></li>
-              <li><a href="about.html"><i class="bi bi-chevron-right"></i> About Us</a></li>
+              <li><a href="index.php"><i class="bi bi-chevron-right"></i> Inicio</a></li>
+              <li><a href="index.php"><i class="bi bi-chevron-right"></i> Reseñas</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Categories</a></li>
+              <li><a href="single-post.php"><i class="bi bi-chevron-right"></i> Publicaciones</a></li>
+              <li><a href="about.php"><i class="bi bi-chevron-right"></i> About Us</a></li>
               <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contacto</a></li>
             </ul>
           </div>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Categorias</h3>
             <ul class="footer-links list-unstyled">
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Servicios</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Cultura</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Experiencias</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Comida</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Emprendimientos</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Viajes</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Servicios</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Cultura</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Experiencias</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Comida</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Emprendimientos</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Viajes</a></li>
 
             </ul>
           </div>
@@ -231,7 +202,7 @@
 
             <ul class="footer-links footer-blog-entry list-unstyled">
               <li>
-                <a href="single-post.html" class="d-flex align-items-center">
+                <a href="single-post.php" class="d-flex align-items-center">
                   <img src="post-landscape-1.jpg" alt="" class="img-fluid me-3">
                   <div>
                     <div class="post-meta d-block"><span class="date">Cultura</span> <span class="mx-1">&bullet;</span> <span>Agosto 5 '22</span></div>

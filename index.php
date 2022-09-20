@@ -29,9 +29,15 @@
   <link href="assets/css/variables.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <script>
+
+    
+
+  </script>
+
 </head>
 
-<body>
+<body onLoad="getListPost();">
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -46,28 +52,16 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Reseñas</a></li>
-          <li><a href="single-post.html">Publicaciones</a></li>
-          <li class="dropdown"><a href="category.html"><span>Categorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-            <ul>
-              <li><a href="search-result.html">Search Result</a></li>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+          <li><a href="single-post.php">Categorias</a>
+          </li>
+          <li class="dropdown">
+            <a href="category.php"><span>Publicaciones</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul id="listPost">
             </ul>
           </li>
 
-          <li><a href="about.html">Sobre Mi</a></li>
-          <li><a href="contact.html">Contactanos</a></li>
+          <li><a href="about.php">Sobre Mi</a></li>
+          <li><a href="contact.php">Contactanos</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -81,7 +75,7 @@
 
         <!-- ======= Search Form ======= -->
         <div class="search-form-wrap js-search-form-wrap">
-          <form action="search-result.html" class="search-form">
+          <form action="search-result.php" class="search-form">
             <span class="icon bi-search"></span>
             <input type="text" placeholder="Search" class="form-control">
             <button class="btn js-search-close"><span class="bi-x"></span></button>
@@ -104,7 +98,7 @@
             <div class="swiper sliderFeaturedPosts">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('https://1.bp.blogspot.com/-b2RIACP7m0k/YIheO7UU2DI/AAAAAAAAV9w/3rxEiLSqVLsaeE6P5SG6KbHnzDrPqRlsQCLcBGAsYHQ/s1772/Mesa-de-los-santos-2.jpg');">
+                  <a href="single-post.php" class="img-bg d-flex align-items-end" style="background-image: url('https://1.bp.blogspot.com/-b2RIACP7m0k/YIheO7UU2DI/AAAAAAAAV9w/3rxEiLSqVLsaeE6P5SG6KbHnzDrPqRlsQCLcBGAsYHQ/s1772/Mesa-de-los-santos-2.jpg');">
                     <div class="img-bg-inner">
                       <h2>Mesa de los santos</h2>
                       <p>La Mesa de Los Santos es una meseta situada en la cordillera Oriental de Colombia en el Macizo de Santander. Está en jurisdicción del municipio de Los Santos. Esta montaña se encuentra ubicada en Colombia en la cordillera de Los Andes, en inmediaciones del cañón de Chicamocha</p>
@@ -113,7 +107,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('https://th.bing.com/th/id/R.e610cbf221c00a9fa87f35ba08b0f8b2?rik=FvCogvFtAqaLtQ&riu=http%3a%2f%2fchipviajero.com%2fwp-content%2fuploads%2f2019%2f07%2fComo-Llegar-al-Ca%c3%b1on-del-Chicamocha-Chip-Viajero-3.jpg&ehk=sA3isuFZ54EOPxCfJNjVCRQVi5tXyW8oJRTpGeywX1E%3d&risl=&pid=ImgRaw&r=0');">
+                  <a href="single-post.php" class="img-bg d-flex align-items-end" style="background-image: url('https://th.bing.com/th/id/R.e610cbf221c00a9fa87f35ba08b0f8b2?rik=FvCogvFtAqaLtQ&riu=http%3a%2f%2fchipviajero.com%2fwp-content%2fuploads%2f2019%2f07%2fComo-Llegar-al-Ca%c3%b1on-del-Chicamocha-Chip-Viajero-3.jpg&ehk=sA3isuFZ54EOPxCfJNjVCRQVi5tXyW8oJRTpGeywX1E%3d&risl=&pid=ImgRaw&r=0');">
                     <div class="img-bg-inner">
                       <h2>Parque chicamocha Bucaramanga</h2>
                       <p>El parque nacional del Chicamocha, es un parque temático de reciente creación, es uno de los pocos parques naturales de Colombia dedicados al ecoturismo, siendo por tanto uno de los sitios turísticos más importantes del país<p>
@@ -122,7 +116,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('https://www.renunciamosyviajamos.com/wp-content/uploads/2015/04/La-Guajira-Mayapo-Renunciamos-y-Viajamos-6.jpg');">
+                  <a href="single-post.php" class="img-bg d-flex align-items-end" style="background-image: url('https://www.renunciamosyviajamos.com/wp-content/uploads/2015/04/La-Guajira-Mayapo-Renunciamos-y-Viajamos-6.jpg');">
                     <div class="img-bg-inner">
                       <h2>Playas de mayapo</h2>
                       <p>Mayapo es una de las playas preferidas por los turistas y viajeros para conocer en La Guajira. Es un lugar de arenas blancas y aguas cristalinas de tonos verdes y aguamarinas. Es un lugar ideal para descansar y dejarse embriagar por todo el encanto que tiene este destino al extremo norte de Colombia. </p>
@@ -131,7 +125,7 @@
                 </div>
 
                 <div class="swiper-slide">
-                  <a href="single-post.html" class="img-bg d-flex align-items-end" style="background-image: url('https://www.elheraldo.co/sites/default/files/articulo/2017/02/08/minca-colombia.jpg');">
+                  <a href="single-post.php" class="img-bg d-flex align-items-end" style="background-image: url('https://www.elheraldo.co/sites/default/files/articulo/2017/02/08/minca-colombia.jpg');">
                     <div class="img-bg-inner">
                       <h2>Minca</h2>
                       <p>Minca es un corregimiento del distrito de Santa Marta, en el departamento del Magdalena, al norte de Colombia. Está ubicada en las estribaciones de la Sierra Nevada de Santa Marta, a unos 15 km del centro de la ciudad. Minca es la capital ecológica de la Sierra Nevada de Santa Marta. Entre sus atractivos destacan el río, las cascadas de Marinka, Pozo Azul, y Las Piedras, entre otros. También se pueden destacar su agradable clima y su zona cafetera. Últimamente Minca dispone también de muchos hostales que ofrecen a sus huéspedes comodidad y tranquilidad.  </p>
@@ -159,9 +153,9 @@
         <div class="row g-5">
           <div class="col-lg-4">
             <div class="post-entry-1 lg">
-              <a href="single-post.html"><img src="https://d3jv0cqma81l17.cloudfront.net/articulos/1434/imagen_destacadas/original/1129_el-restaurante-con-mas-reservas-del-2018-en-bucaramanga.png?1573812925" alt="" class="img-fluid"></a>
+              <a href="single-post.php"><img src="https://d3jv0cqma81l17.cloudfront.net/articulos/1434/imagen_destacadas/original/1129_el-restaurante-con-mas-reservas-del-2018-en-bucaramanga.png?1573812925" alt="" class="img-fluid"></a>
               <div class="post-meta"><span class="date">Gastronia</span> <span class="mx-1">&bullet;</span> <span>sep 18th '22</span></div>
-              <h2><a href="single-post.html">Mi experiencia en los restaurantes de Bucaramanga</a></h2>
+              <h2><a href="single-post.php">Mi experiencia en los restaurantes de Bucaramanga</a></h2>
               <p class="mb-4 d-block">Mi llegada a bucaramanga fue especial, su cultura, las personas y principalmente la comida , puedo decir que las mejores hamburguesas , el mejor restaurante para mi el mejor se llama , espinosa pastas y vinos , les recomiendo que si vienen a la ciudad bonita lo prueben.</p>
 
               <div class="d-flex align-items-center author">
@@ -178,36 +172,36 @@
             <div class="row g-5">
               <div class="col-lg-4 border-start custom-border">
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="https://th.bing.com/th/id/OIP.R_7PMZRsof70JcmlAxc3OgHaEK?pid=ImgDet&rs=1" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://th.bing.com/th/id/OIP.R_7PMZRsof70JcmlAxc3OgHaEK?pid=ImgDet&rs=1" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Medellin</span> <span class="mx-1">&bullet;</span> <span>sep 18th '22</span></div>
-                  <h2><a href="single-post.html">Super experiencias vividas en guatape , encontraras miles de experiencias unicas </a></h2>
+                  <h2><a href="single-post.php">Super experiencias vividas en guatape , encontraras miles de experiencias unicas </a></h2>
                 </div>
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="https://2.bp.blogspot.com/-clJrT_iOFWI/TgC5xDJjiEI/AAAAAAAALYI/rFz-me6LeFw/s1600/chinacota.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://2.bp.blogspot.com/-clJrT_iOFWI/TgC5xDJjiEI/AAAAAAAALYI/rFz-me6LeFw/s1600/chinacota.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Cucuta</span> <span class="mx-1">&bullet;</span> <span>Jul 17th '22</span></div>
-                  <h2><a href="single-post.html">Si vas a cucuta y eres amante al campo no debes perderte y visitar chinacota a tan solo a una hora de bucaramanga , encontraras fincas, cabañas y mucho por explorar.</a></h2>
+                  <h2><a href="single-post.php">Si vas a cucuta y eres amante al campo no debes perderte y visitar chinacota a tan solo a una hora de bucaramanga , encontraras fincas, cabañas y mucho por explorar.</a></h2>
                 </div>
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/portadas_relaciona_4_3/public/node/article/field_image/MONSERRATE.jpg?h=efd05f9e&itok=uaolkzqm" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://radionacional-v3.s3.amazonaws.com/s3fs-public/styles/portadas_relaciona_4_3/public/node/article/field_image/MONSERRATE.jpg?h=efd05f9e&itok=uaolkzqm" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Bogota</span> <span class="mx-1">&bullet;</span> <span>Mar 15th '22</span></div>
-                  <h2><a href="single-post.html">El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. Junto a Guadalupe es uno de los cerros tutelares de la ciudad. Monserrate tiene una altitud de 3152 m y se ubica sobre la cordillera oriental</a></h2>
+                  <h2><a href="single-post.php">El cerro de Monserrate es el más conocido de los cerros Orientales de Bogotá. Junto a Guadalupe es uno de los cerros tutelares de la ciudad. Monserrate tiene una altitud de 3152 m y se ubica sobre la cordillera oriental</a></h2>
                 </div>
               </div>
               <div class="col-lg-4 border-start custom-border">
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="https://th.bing.com/th/id/OIP.fgb5z2aD1ec2d0u5S7fp1QHaEV?pid=ImgDet&rs=1" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://th.bing.com/th/id/OIP.fgb5z2aD1ec2d0u5S7fp1QHaEV?pid=ImgDet&rs=1" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Santa marta</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2><a href="single-post.html">Las estribaciones de la Sierra Nevada de Santa Marta, la montaña costera más alta del mundo, se hunden en el mar como los dedos de una mano gigantesca entre los que se forman bahías y ensenadas de belleza singular: Chengue, Gayraca, Cinto, Neguanje, Concha, Guachaquita</a></h2>
+                  <h2><a href="single-post.php">Las estribaciones de la Sierra Nevada de Santa Marta, la montaña costera más alta del mundo, se hunden en el mar como los dedos de una mano gigantesca entre los que se forman bahías y ensenadas de belleza singular: Chengue, Gayraca, Cinto, Neguanje, Concha, Guachaquita</a></h2>
                 </div>
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="https://www.opinioncaribe.com/wp-content/uploads/2018/07/10.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://www.opinioncaribe.com/wp-content/uploads/2018/07/10.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Barranquilla</span> <span class="mx-1">&bullet;</span> <span>Mar 1st '22</span></div>
-                  <h2><a href="single-post.html">La Ventana al mundo es un monumento público ubicado en Barranquilla, Colombia. Fue construido a finales de 2018 para coincidir con los XXIII Juegos Centroamericanos y del Caribe de los cuales la ciudad fue anfitriona.</a></h2>
+                  <h2><a href="single-post.php">La Ventana al mundo es un monumento público ubicado en Barranquilla, Colombia. Fue construido a finales de 2018 para coincidir con los XXIII Juegos Centroamericanos y del Caribe de los cuales la ciudad fue anfitriona.</a></h2>
                 </div>
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="https://i.ytimg.com/vi/R9KYlmFA86c/maxresdefault.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://i.ytimg.com/vi/R9KYlmFA86c/maxresdefault.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Bucaramanga</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2><a href="single-post.html">El Ecoparque Cerro del Santísimo es un sitio turístico ubicado en la Vereda Helechales, sector rural de Floridablanca, conocido por poseer una escultura de El Santísimo, una escultura artística </a></h2>
+                  <h2><a href="single-post.php">El Ecoparque Cerro del Santísimo es un sitio turístico ubicado en la Vereda Helechales, sector rural de Floridablanca, conocido por poseer una escultura de El Santísimo, una escultura artística </a></h2>
                 </div>
               </div>
 
@@ -218,35 +212,35 @@
                   <h3>Reseñas tendencias </h3>
                   <ul class="trending-post">
                     <li>
-                      <a href="single-post.html">
+                      <a href="single-post.php">
                         <span class="number">1</span>
                         <h3>Guatape la mejorer experiencia de Medellin</h3>
                         <span class="author">Fernando Rojas</span>
                       </a>
                     </li>
                     <li>
-                      <a href="single-post.html">
+                      <a href="single-post.php">
                         <span class="number">2</span>
                         <h3>No te pierdas de las maravillosas cascadas que tiene zapatoca para ofrecerte</h3>
                         <span class="author">Rances Rodriguez</span>
                       </a>
                     </li>
                     <li>
-                      <a href="single-post.html">
+                      <a href="single-post.php">
                         <span class="number">3</span>
                         <h3>El cabo de la vela , una experiencia inolvidable, duerme junto con el mar y el desierto</h3>
                         <span class="author">Adrian romero</span>
                       </a>
                     </li>
                     <li>
-                      <a href="single-post.html">
+                      <a href="single-post.php">
                         <span class="number">4</span>
                         <h3> Increibles playas de Barranquilla, si tienes pareja y quieres sorprenderla debes llevarla a una de estas maravillosas playas romanticas</h3>
                         <span class="author">Camila villazon</span>
                       </a>
                     </li>
                     <li>
-                      <a href="single-post.html">
+                      <a href="single-post.php">
                         <span class="number">5</span>
                         <h3>Pueblo bello , a una hora de valledupar , increible experiencia de fincas agricultoras</h3>
                         <span class="author">Dubian palacios</span>
@@ -269,19 +263,19 @@
 
         <div class="section-header d-flex justify-content-between align-items-center mb-5">
           <h2>Experiencias</h2>
-          <div><a href="category.html" class="more">See All Culture</a></div>
+          <div><a href="category.php" class="more">See All Culture</a></div>
         </div>
 
         <div class="row">
           <div class="col-md-9">
 
             <div class="d-lg-flex post-entry-2">
-              <a href="single-post.html" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
+              <a href="single-post.php" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
                 <img src="https://www.amb.gov.co/images/noticias/2017/alertas%20tempranas%20img2-25-07-2017.jpg" alt="" class="img-fluid">
               </a>
               <div>
                 <div class="post-meta"><span class="date">Rios bucaramanga</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                <h3><a href="single-post.html" target="_blank">Travel por todos los rios de bucaramanga</a></h3>
+                <h3><a href="single-post.php" target="_blank">Travel por todos los rios de bucaramanga</a></h3>
                 <p>Los servicios de la experiencia incluye trasporte , almuerzo y recuerdo del viaje</p>
                 <div class="d-flex align-items-center author">
                   <div class="photo"><img src="https://www.amb.gov.co/images/noticias/2017/alertas%20tempranas%20img2-25-07-2017.jpg" alt="" class="img-fluid"></div>
@@ -295,25 +289,25 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="post-entry-1 border-bottom">
-                  <a href="single-post.html"><img src="assets/img/post-landscape-1.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="assets/img/post-landscape-1.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Experiencias</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2 class="mb-2"><a href="single-post.html">Tour por el cabo de la vela</a></h2>
+                  <h2 class="mb-2"><a href="single-post.php">Tour por el cabo de la vela</a></h2>
                   <span class="author mb-3 d-block">iveth medina</span>
                   <p class="mb-4 d-block">3 dias y 4 noches por el cabo de la vela, disfruta de las mejores playas de la guajira</p>
                 </div>
 
                 <div class="post-entry-1">
                   <div class="post-meta"><span class="date">Experiencias</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2 class="mb-2"><a href="single-post.html">Tour por palomino</a></h2>
+                  <h2 class="mb-2"><a href="single-post.php">Tour por palomino</a></h2>
                   <span class="author mb-3 d-block">Daniel Perez</span>
                   <p class="mb-4 d-block">3 dias y 4 noches por palomino, disfruta de las mejores playas de la guajira</p>
                 </div>
               </div>
               <div class="col-lg-8">
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2019/01/04/5fa51ae8290ab.jpeg" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2019/01/04/5fa51ae8290ab.jpeg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Experiencias</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2 class="mb-2"><a href="single-post.html">Conoce la iglesia de sal en zipaquira</a></h2>
+                  <h2 class="mb-2"><a href="single-post.php">Conoce la iglesia de sal en zipaquira</a></h2>
                   <span class="author mb-3 d-block">Andrea Perez</span>
                   <p class="mb-4 d-block"></p>
                 </div>
@@ -368,19 +362,19 @@
 
         <div class="section-header d-flex justify-content-between align-items-center mb-5">
           <h2>Restaurantes</h2>
-          <div><a href="category.html" class="more">Restaurantes</a></div>
+          <div><a href="category.php" class="more">Restaurantes</a></div>
         </div>
 
         <div class="row">
           <div class="col-md-9 order-md-2">
 
             <div class="d-lg-flex post-entry-2">
-              <a href="single-post.html" class="me-4 thumbnail d-inline-block mb-4 mb-lg-0">
+              <a href="single-post.php" class="me-4 thumbnail d-inline-block mb-4 mb-lg-0">
                 <img src="https://blog.borderio.com/wp-content/uploads/2020/08/maridaje-blog.jpg" alt="" class="img-fluid">
               </a>
               <div>
                 <div class="post-meta"><span class="date">Restaurantes</span> <span class="mx-1">&bullet;</span> <span>sep 20th '22</span></div>
-                <h3><a href="single-post.html">espinosa Pastas Y Vinos</a></h3>
+                <h3><a href="single-post.php">espinosa Pastas Y Vinos</a></h3>
                 <p>Restaurante de moda para citas romanticas</p>
                 <div class="d-flex align-items-center author">
                   <div class="photo"><img src="https://blog.borderio.com/wp-content/uploads/2020/08/maridaje-blog.jpg" alt="" class="img-fluid"></div>
@@ -394,24 +388,24 @@
             <div class="row">
               <div class="col-lg-4">
                 <div class="post-entry-1 border-bottom">
-                  <a href="single-post.html"><img src="https://img.restaurantguru.com/r738-Soy-Bumangues-exterior.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://img.restaurantguru.com/r738-Soy-Bumangues-exterior.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+                  <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
                   <span class="author mb-3 d-block">Gilberto Vieco</span>
                   <p class="mb-4 d-block">ven y has tu reserva para que te deleites</p>
                 </div>
 
                 <div class="post-entry-1">
                   <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+                  <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
                   <span class="author mb-3 d-block">Gilberto Vieco</span>
                 </div>
               </div>
               <div class="col-lg-8">
                 <div class="post-entry-1">
-                  <a href="single-post.html"><img src="https://pueblospatrimoniodecolombia.travel/wp-content/uploads/2021/06/Restaurantes-en-Bucaramanga-2.jpg" alt="" class="img-fluid"></a>
+                  <a href="single-post.php"><img src="https://pueblospatrimoniodecolombia.travel/wp-content/uploads/2021/06/Restaurantes-en-Bucaramanga-2.jpg" alt="" class="img-fluid"></a>
                   <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-                  <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+                  <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
                   <span class="author mb-3 d-block">Daniel Vieco</span>
                   <p class="mb-4 d-block">ven y has tu reserva para que te deleites</p>
                 </div>
@@ -421,37 +415,37 @@
           <div class="col-md-3">
             <div class="post-entry-1 border-bottom">
               <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-              <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+              <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
               <span class="author mb-3 d-block">Gilberto Vieco</span>
             </div>
 
             <div class="post-entry-1 border-bottom">
               <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-              <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+              <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
               <span class="author mb-3 d-block">Gilberto Vieco</span>
             </div>
 
             <div class="post-entry-1 border-bottom">
               <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-              <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+              <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
               <span class="author mb-3 d-block">Gilberto Vieco</span>
             </div>
 
             <div class="post-entry-1 border-bottom">
               <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-              <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+              <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
               <span class="author mb-3 d-block">Gilberto Vieco</span>
             </div>
 
             <div class="post-entry-1 border-bottom">
               <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-              <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+              <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
               <span class="author mb-3 d-block">Gilberto Vieco</span>
             </div>
 
             <div class="post-entry-1 border-bottom">
               <div class="post-meta"><span class="date">Experiencia</span> <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span></div>
-              <h2 class="mb-2"><a href="single-post.html">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
+              <h2 class="mb-2"><a href="single-post.php">Mejor restaurante de hamburguesa en bucaramanga </a></h2>
               <span class="author mb-3 d-block">Gilberto Vieco</span>
             </div>
           </div>
@@ -471,17 +465,17 @@
           <div class="col-lg-4">
             <h3 class="footer-heading">Review Colombia</h3>
             <p>Es una plataforma de reseñas de experiencias y restaurantes que se dividen por ciudades para que se pueda conseguir la mayor experiencia en cada una</p>
-            <p><a href="about.html" class="footer-link-more">Learn More</a></p>
+            <p><a href="about.php" class="footer-link-more">Learn More</a></p>
           </div>
           <div class="col-6 col-lg-2">
             <h3 class="footer-heading">Navigation</h3>
             <ul class="footer-links list-unstyled">
               <li><a href="index.html"><i class="bi bi-chevron-right"></i> Inico</a></li>
               <li><a href="index.html"><i class="bi bi-chevron-right"></i> Reseña</a></li>
-              <li><a href="category.html"><i class="bi bi-chevron-right"></i> Categoria</a></li>
-              <li><a href="single-post.html"><i class="bi bi-chevron-right"></i> Publicaciones</a></li>
-              <li><a href="about.html"><i class="bi bi-chevron-right"></i> Sobre mi</a></li>
-              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contactanos</a></li>
+              <li><a href="category.php"><i class="bi bi-chevron-right"></i> Categoria</a></li>
+              <li><a href="single-post.php"><i class="bi bi-chevron-right"></i> Publicaciones</a></li>
+              <li><a href="about.php"><i class="bi bi-chevron-right"></i> Sobre mi</a></li>
+              <li><a href="contact.php"><i class="bi bi-chevron-right"></i> Contactanos</a></li>
             </ul>
           </div>
 
@@ -533,6 +527,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/ajaxFunctions.js"></script>
 
 </body>
 
